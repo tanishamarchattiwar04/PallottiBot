@@ -1,0 +1,247 @@
+
+
+/* ─── OVERLAY ─── */
+#auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(7, 14, 28, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#auth-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ─── MODAL CARD ─── */
+.auth-card {
+  background: linear-gradient(160deg, #0d1b2e 0%, #112347 100%);
+  border: 1px solid rgba(200, 148, 31, 0.35);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 36px 32px;
+  position: relative;
+  box-shadow:
+    0 0 0 1px rgba(200, 148, 31, 0.1),
+    0 30px 80px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(200, 148, 31, 0.08);
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation: none;
+}
+
+#auth-overlay.active .auth-card {
+  transform: translateY(0) scale(1);
+}
+
+/* ─── CLOSE BUTTON ─── */
+.auth-close {
+  position: absolute;
+  top: 14px; right: 16px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.5);
+  width: 30px; height: 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.auth-close:hover { background: rgba(255,255,255,0.13); color: white; }
+
+/* ─── HEADER ─── */
+.auth-logo {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 6px;
+}
+.auth-avatar {
+  width: 46px; height: 46px; border-radius: 50%;
+  background: linear-gradient(135deg, #c8941f, #7a5000);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 700; color: #0b1d3a;
+  border: 2px solid rgba(200,148,31,0.5);
+  flex-shrink: 0;
+}
+.auth-logo-text h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 700; color: #e8b84b;
+  line-height: 1.1;
+}
+.auth-logo-text p { font-size: 11px; color: rgba(255,255,255,0.35); }
+
+.auth-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px; font-weight: 700; color: white;
+  margin: 18px 0 4px;
+  line-height: 1.2;
+}
+.auth-sub {
+  font-size: 12.5px; color: rgba(255,255,255,0.4);
+  margin-bottom: 24px; line-height: 1.6;
+}
+
+/* ─── TABS ─── */
+.auth-tabs {
+  display: flex; gap: 6px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px; padding: 4px;
+  margin-bottom: 22px;
+}
+.auth-tab {
+  flex: 1; padding: 8px;
+  background: transparent; border: none;
+  color: rgba(255,255,255,0.4);
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px; font-weight: 500;
+  border-radius: 8px; cursor: pointer;
+  transition: all 0.22s;
+}
+.auth-tab.active {
+  background: linear-gradient(135deg, #c8941f, #8b6000);
+  color: white;
+  box-shadow: 0 3px 12px rgba(200,148,31,0.35);
+}
+
+/* ─── FORM ─── */
+.auth-form { display: flex; flex-direction: column; gap: 14px; }
+
+.auth-field {
+  display: flex; flex-direction: column; gap: 6px;
+}
+.auth-field label {
+  font-size: 11.5px; font-weight: 600;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.auth-field input {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  outline: none;
+  transition: border 0.2s, background 0.2s;
+}
+.auth-field input::placeholder { color: rgba(255,255,255,0.2); }
+.auth-field input:focus {
+  border-color: #c8941f;
+  background: rgba(200,148,31,0.07);
+}
+
+/* ─── SUBMIT BTN ─── */
+.auth-submit {
+  margin-top: 4px;
+  padding: 12px;
+  background: linear-gradient(135deg, #c8941f, #8b6000);
+  border: none; border-radius: 10px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px; font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 4px 20px rgba(200,148,31,0.3);
+}
+.auth-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 25px rgba(200,148,31,0.45);
+}
+.auth-submit:active { transform: translateY(0); }
+
+/* ─── MESSAGE ─── */
+.auth-msg {
+  font-size: 12.5px; text-align: center;
+  padding: 9px 12px; border-radius: 8px;
+  display: none;
+}
+.auth-msg.error {
+  display: block;
+  background: rgba(255, 80, 80, 0.12);
+  border: 1px solid rgba(255,80,80,0.3);
+  color: #ff8080;
+}
+.auth-msg.success {
+  display: block;
+  background: rgba(94, 224, 94, 0.1);
+  border: 1px solid rgba(94,224,94,0.3);
+  color: #5ee05e;
+}
+
+/* ─── DIVIDER ─── */
+.auth-divider {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 11px; color: rgba(255,255,255,0.2);
+  margin: 4px 0;
+}
+.auth-divider::before, .auth-divider::after {
+  content:''; flex:1; height:1px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ─── CHATBOT LOCKED STATE ─── */
+.chat-locked-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 32px 20px;
+  text-align: center;
+  animation: fadeUp 0.5s ease;
+}
+.chat-locked-banner .lock-icon { font-size: 36px; }
+.chat-locked-banner h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; color: #e8b84b;
+}
+.chat-locked-banner p { font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.6; }
+.chat-locked-banner button {
+  margin-top: 6px;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #c8941f, #8b6000);
+  border: none; border-radius: 10px;
+  color: white; font-family: 'Outfit', sans-serif;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer; transition: all 0.2s;
+}
+.chat-locked-banner button:hover { transform: translateY(-1px); box-shadow: 0 4px 15px rgba(200,148,31,0.4); }
+
+/* ─── CHAT USER INFO BAR ─── */
+.chat-user-bar {
+  display: none;
+  align-items: center; justify-content: space-between;
+  padding: 8px 16px;
+  background: rgba(200,148,31,0.08);
+  border-bottom: 1px solid rgba(200,148,31,0.2);
+  font-size: 12px;
+}
+.chat-user-bar.visible { display: flex; }
+.chat-user-bar .user-greeting { color: rgba(255,255,255,0.55); }
+.chat-user-bar .user-greeting b { color: #e8b84b; }
+.chat-user-bar .logout-btn {
+  background: transparent; border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.4); border-radius: 6px;
+  padding: 3px 10px; font-size: 11px; cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.2s;
+}
+.chat-user-bar .logout-btn:hover { border-color: rgba(255,80,80,0.4); color: #ff8080; }
+
+/* ─── INPUT LOCKED OVERLAY ─── */
+.chat-input-area.locked {
+  pointer-events: none;
+  opacity: 0.35;
+  user-select: none;
+}

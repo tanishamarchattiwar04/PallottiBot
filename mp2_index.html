@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script>
+if (!localStorage.getItem("user")) {
+  alert("Please login first!");
+  window.location.href = "login.html";
+}
+</script> -->
+<title>SVPCET – St. Vincent Pallotti College of Engineering & Technology, Nagpur</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- <script src="https://unpkg.com/compromise@14/builds/compromise.min.js"></script> -->
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="auth-modal.css">
+</head>
+<body>
+  <!-- <button onclick="logout()" style="position:absolute; top:10px; right:10px;"> -->
+  <!-- Logout 
+</button>  -->
+
+<!-- ═══════ MAIN WEBSITE ═══════ -->
+<div id="main-site">
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">
+      <div class="logo">
+    <img src="svpcetlogo.jpg" width="40" height="40" object-fit="contain" alt= "SVPCET Logo" class="logo-img">
+
+    <div class="text">
+        <h5 style="color: #c8941f;;">SVPCET</h5>
+        <!-- <p>Nagpur • Est. 2008</p> -->
+    </div>
+</div>
+      
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#facilities">Campus</a></li>
+      <li><a href="#placements">Placements</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#admissions" class="btn-apply">Apply Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <span class="ticker-label">📢 NEWS</span>
+    <div class="ticker-wrap">
+      <div class="ticker-text">
+        🎓 Admissions Open for 2026-27 &nbsp;|&nbsp; 📅 MHT-CET CAP Round Registration begins shortly &nbsp;|&nbsp; 🏆 SVPCET students placed in TCS, Infosys, Wipro &nbsp;|&nbsp; 🔬 New Robotics Lab inaugurated &nbsp;|&nbsp; 🏅 Best Engineering College Award – Nagpur Region 2023 &nbsp;|&nbsp; 📖 Campus Fest – TechZeal 2024 coming soon!
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span></span>AICTE Approved &nbsp;·&nbsp; RTMNU Affiliated
+      </div>
+      <h1>St.Vincent Pallotti College of Engineering & Technology,Nagpur</h1>
+      <p>St. Vincent Pallotti College of Engineering & Technology — shaping future engineers through academic rigor, innovation, and holistic development since 2008.</p>
+      <div class="hero-btns">
+        <a href="#admissions" class="btn-primary">Apply for 2026–27</a>
+        <a href="#courses" class="btn-secondary">Explore Courses →</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card"><div class="num">15+</div><div class="lbl">YEARS OF<br>EXCELLENCE</div></div>
+      <div class="stat-card"><div class="num">6</div><div class="lbl">B.E.<br>PROGRAMS</div></div>
+      <div class="stat-card"><div class="num">3000+</div><div class="lbl">ALUMNI<br>WORLDWIDE</div></div>
+      <div class="stat-card"><div class="num">90%</div><div class="lbl">PLACEMENT<br>RATE</div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">Who We Are</div>
+    <div class="section-title">A Legacy of Engineering<br>& Compassionate Education</div>
+    <div class="section-sub">Founded by the Diocese of Nagpur, SVPCET combines technical excellence with the values of Saint Vincent Pallotti — service, knowledge, and character.</div>
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="campus-visual">🏛️</div>
+        <div class="campus-tag">📍 Gavsi Manapur, Wardha Road, Nagpur</div>
+      </div>
+      <div>
+        <p style="font-size:15px;line-height:1.8;color:#444;margin-bottom:20px;">
+          Established in 2008, SVPCET is one of Nagpur's premier engineering institutions, affiliated with Rashtrasant Tukadoji Maharaj Nagpur University (RTMNU) and approved by AICTE. Our campus fosters an environment of academic inquiry, technical innovation, and value-based education.
+        </p>
+        <div class="about-features">
+          <div class="feat-item">
+            <div class="feat-icon">🎓</div>
+            <div class="feat-text">
+              <h4>AICTE Approved & RTMNU Affiliated</h4>
+              <p>Fully recognized by top regulatory bodies, ensuring quality and credibility of our degrees.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon">🔬</div>
+            <div class="feat-text">
+              <h4>State-of-the-Art Laboratories</h4>
+              <p>Modern labs for all engineering branches — from AI/ML to Mechanical workshops.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon">🤝</div>
+            <div class="feat-text">
+              <h4>Industry-Academia Partnerships</h4>
+              <p>Collaborations with leading tech companies for internships, projects, and placements.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon">🌍</div>
+            <div class="feat-text">
+              <h4>Inclusive & Value-Based Culture</h4>
+              <p>A diverse, welcoming campus guided by Pallottine values of service and excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="section-label">Academic Programs</div>
+    <div class="section-title">Undergraduate & Postgraduate<br>Programs</div>
+    <div class="section-sub">Choose from six engineering disciplines and an MBA program, all designed to prepare you for a future-ready career.</div>
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-icon">💻</div>
+        <h3>Computer Science Engineering</h3>
+        <p>Programming, AI, ML, data structures, cloud computing, and software engineering.</p>
+        <span class="course-tag">B.E. · 4 Years</span>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">🌐</div>
+        <h3>Information Technology</h3>
+        <p>Networking, cybersecurity, database management, web technologies, and IT systems.</p>
+        <span class="course-tag">B.E. · 4 Years</span>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">📡</div>
+        <h3>Electronics & Telecomm.</h3>
+        <p>Embedded systems, VLSI, signal processing, wireless communication, and IoT.</p>
+        <span class="course-tag">B.E. · 4 Years</span>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">⚡</div>
+        <h3>Electrical Engineering</h3>
+        <p>Power systems, control systems, electric machines, and renewable energy.</p>
+        <span class="course-tag">B.E. · 4 Years</span>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">⚙️</div>
+        <h3>Mechanical Engineering</h3>
+        <p>Thermodynamics, CAD/CAM, manufacturing, fluid mechanics, and automobile engineering.</p>
+        <span class="course-tag">B.E. · 4 Years</span>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">🏗️</div>
+        <h3>Civil Engineering</h3>
+        <p>Structural design, construction management, environmental engineering, and surveying.</p>
+        <span class="course-tag">B.E. · 4 Years</span>
+      </div>
+      <div class="course-card" style="grid-column: 1/-1; background: linear-gradient(135deg, var(--navy), #1a3a6e); border-color: rgba(200,148,31,0.3);">
+        <div class="course-icon">📊</div>
+        <h3 style="color:var(--white);">Master of Business Administration (MBA)</h3>
+        <p style="color:rgba(255,255,255,0.6);">Postgraduate management program covering Finance, Marketing, HR, and Operations.</p>
+        <span class="course-tag" style="background:rgba(200,148,31,0.2);color:var(--gold2);">MBA · 2 Years · Postgraduate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSIONS -->
+  <section id="admissions">
+    <div class="section-label" style="color:var(--gold2);">Join SVPCET</div>
+    <div class="section-title">Admissions 2026-27</div>
+    <div class="section-sub">Secure your seat through MHT-CET / JEE Main. The admission process is streamlined and transparent through DTE Maharashtra's CAP rounds.</div>
+
+    <div class="steps-row">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <h4>Appear for Entrance</h4>
+        <p>MHT-CET or JEE Main for engineering. MAH-MBA CET for MBA.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <h4>Register on DTE Portal</h4>
+        <p>Submit scores and preferences on dtemaharashtra.gov.in</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <h4>CAP Round Allotment</h4>
+        <p>Receive your college and branch allotment based on merit and preference.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <h4>Report to SVPCET</h4>
+        <p>Submit documents, pay fees, and confirm your admission.</p>
+      </div>
+    </div>
+
+    <div class="admission-info">
+      <div class="info-card">
+        <h4>📋 Documents Required</h4>
+        <ul>
+          <li>10th & 12th Marksheets</li>
+          <li>MHT-CET / JEE Scorecard</li>
+          <li>School Leaving Certificate</li>
+          <li>Domicile Certificate (Maharashtra)</li>
+          <li>Caste Certificate (if applicable)</li>
+          <li>Aadhaar Card</li>
+          <li>Passport-size Photographs</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>💰 Fee Structure (Approx.)</h4>
+        <ul>
+          <li>B.E. / B.Tech: ₹1,00,000–₹1,30,000/year</li>
+          <li>MBA: ₹80,000–₹1,00,000/year</li>
+          <li>SC/ST/OBC fee waiver via government schemes</li>
+          <li>EWS category benefits available</li>
+          <li>Scholarships for meritorious students</li>
+          <li>Direct 2nd Year (Diploma Lateral Entry)</li>
+          <li>Hostel & transport fees separate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section id="facilities">
+    <div class="section-label">Campus Life</div>
+    <div class="section-title">World-Class Facilities<br>on Campus</div>
+    <div class="section-sub">Our Wi-Fi enabled campus is equipped with modern infrastructure designed for academic excellence and student well-being.</div>
+    <div class="facilities-grid">
+      <div class="facility-card">
+        <div class="f-icon">🔬</div>
+        <h4>Advanced Laboratories</h4>
+        <p>Branch-specific, fully equipped labs with modern instruments and software.</p>
+      </div>
+      <div class="facility-card">
+        <div class="f-icon">📚</div>
+        <h4>Central Library</h4>
+        <p>Thousands of books, e-journals, digital resources, and reading rooms.</p>
+      </div>
+      <div class="facility-card">
+        <div class="f-icon">🏠</div>
+        <h4>Boys & Girls Hostel</h4>
+        <p>Separate secure hostels with mess, 24/7 security, and warden supervision.</p>
+      </div>
+      <div class="facility-card">
+        <div class="f-icon">🍽️</div>
+        <h4>Cafeteria</h4>
+        <p>Hygienic, affordable meals — vegetarian and non-vegetarian options daily.</p>
+      </div>
+      <div class="facility-card">
+        <div class="f-icon">🏃</div>
+        <h4>Sports Complex</h4>
+        <p>Outdoor grounds and indoor sports facilities for cricket, basketball, and more.</p>
+      </div>
+      <div class="facility-card">
+        <div class="f-icon">📶</div>
+        <h4>Wi-Fi Campus</h4>
+        <p>High-speed internet connectivity across all campus buildings and hostels.</p>
+      </div>
+      <div class="facility-card">
+        <div class="f-icon">🚌</div>
+        <h4>Transport Service</h4>
+        <p>College bus routes covering major areas of Nagpur for convenient commute.</p>
+      </div>
+      <div class="facility-card">
+        <div class="f-icon">🎭</div>
+        <h4>Auditorium & Seminar Halls</h4>
+        <p>Large auditorium and multiple seminar rooms for events and guest lectures.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLACEMENTS -->
+  <section id="placements">
+    <div class="section-label">Career Outcomes</div>
+    <div class="section-title">Placements & Industry Connect</div>
+    <div class="section-sub">Our dedicated Training & Placement Cell works round-the-year to connect students with top recruiters across IT, manufacturing, and management sectors.</div>
+    <div class="placement-highlight">
+      <div class="ph-card">
+        <div class="ph-num">90%+</div>
+        <div class="ph-lbl">Placement Rate</div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-num">₹10 LPA</div>
+        <div class="ph-lbl">Highest Package</div>
+      </div>
+      <div class="ph-card">
+        <div class="ph-num">50+</div>
+        <div class="ph-lbl">Recruiting Companies</div>
+      </div>
+    </div>
+    <div class="companies-heading">Top Recruiters</div>
+    <div class="company-logos">
+      <div class="co-chip">TCS</div>
+      <div class="co-chip">Infosys</div>
+      <div class="co-chip">Wipro</div>
+      <div class="co-chip">Cognizant</div>
+      <div class="co-chip">Capgemini</div>
+      <div class="co-chip">Tech Mahindra</div>
+      <div class="co-chip">L&T</div>
+      <div class="co-chip">HCL Technologies</div>
+      <div class="co-chip">Accenture</div>
+      <div class="co-chip">Persistent Systems</div>
+      <div class="co-chip">KPIT Technologies</div>
+      <div class="co-chip">Mphasis</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Get In Touch</div>
+    <div class="section-title">Contact SVPCET</div>
+    <div class="section-sub">We're here to help with admissions, queries, and campus visits. Reach out anytime.</div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <div class="c-icon">📍</div>
+          <div class="c-text">
+            <h5>Address</h5>
+            <p>Gavsi Manapur, Wardha Road,<br>Nagpur – 441108, Maharashtra, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">📞</div>
+          <div class="c-text">
+            <h5>Phone</h5>
+            <p>+91-712-2801000<br>+91-712-2801001</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">✉️</div>
+          <div class="c-text">
+            <h5>Email</h5>
+            <p>info@svpcet.org<br>admissions@svpcet.org</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">🌐</div>
+          <div class="c-text">
+            <h5>Website</h5>
+            <p>www.svpcet.org</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">🕐</div>
+          <div class="c-text">
+            <h5>Office Hours</h5>
+            <p>Monday – Saturday: 9:00 AM – 5:00 PM<br>Closed on Sundays & Public Holidays</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="map-icon">🗺️</div>
+        <p>Gavsi Manapur, Wardha Road<br>Nagpur – 441108</p>
+        <a href="https://maps.google.com/?q=St+Vincent+Pallotti+College+of+Engineering+Nagpur" target="_blank">Open in Google Maps →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 <span>St. Vincent Pallotti College of Engineering & Technology</span>, Nagpur. All rights reserved.</p>
+    <p style="margin-top:6px;">Affiliated to RTMNU · Approved by AICTE · Diocese of Nagpur</p>
+  </footer>
+
+</div><!-- end #main-site -->
+
+
+<!-- ═══════ AI CHATBOT SIDEBAR ═══════ -->
+<div id="chat-sidebar">
+  <div class="chat-header">
+    <div class="bot-avatar">P</div>
+    <div class="chat-header-info">
+      <h3>PallottiBot AI</h3>
+      <p>College Query Assistant</p>
+    </div>
+    <div class="chat-status"><div class="chat-dot"></div>Online</div>
+  </div>
+
+  <div id="chat-messages">
+    <div class="chat-welcome">
+      <h4>👋 Hi there!</h4>
+      <p>Ask me anything about SVPCET</p>
+    </div>
+    <div class="quick-chips" id="quickChips">
+      <div class="qchip" onclick="quickSend('Tell me about SVPCET')">🏛️ About</div>
+      <div class="qchip" onclick="quickSend('What courses are offered?')">📚 Courses</div>
+      <div class="qchip" onclick="quickSend('Admission procedure')">📋 Admissions</div>
+      <div class="qchip" onclick="quickSend('Fee structure')">💰 Fees</div>
+      <div class="qchip" onclick="quickSend('Placement details')">💼 Placements</div>
+      <div class="qchip" onclick="quickSend('Campus facilities')">🏗️ Facilities</div>
+      <div class="qchip" onclick="quickSend('Hostel information')">🏠 Hostel</div>
+      <div class="qchip" onclick="quickSend('Contact and location')">📍 Contact</div>
+    </div>
+  </div>
+
+  <div class="chat-input-area">
+    <div class="chat-input-row">
+      <textarea id="chatInput" placeholder="Ask about SVPCET..." rows="1"
+        onkeydown="handleChatKey(event)" oninput="autoGrow(this)"></textarea>
+      <button id="sendChatBtn" onclick="sendChat()">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+      <button class="voice-btn" onclick="startVoice()">
+        🎤
+      </button>
+    </div>
+    <div class="chat-disclaimer">PallottiBot may make errors. Verify critical info with the college.</div>
+  </div>
+</div>
+
+<!-- Mobile toggle -->
+<button id="chat-toggle" onclick="toggleChat()">💬</button>
+
+<script src="index.js"></script>
+<!-- <script>
+function logout() {
+  localStorage.removeItem("user");
+  window.location.href = "login.html";
+} -->
+</script>
+<script src="auth.js"></script>
+</body>
+</html>
